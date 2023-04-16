@@ -9,5 +9,4 @@ public class SendMailJavaApplication {
 		HandleMail mailer = new HandleMail();
 		mailer.sendMail();
 	}
-
 }

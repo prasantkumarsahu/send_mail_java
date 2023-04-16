@@ -20,10 +20,10 @@ public class HandleMail {
 		System.out.println(props);
 		
 		// set propersties
-		props.put("smtp.gmail.host", host);
-		props.put("smtp.gmail.port", "587");
-		props.put("smtp.gmail.ssl.enable", "true");
-		props.put("smtp.gmail.auth", "true");
+		props.put("mail.smtp.host", host);
+		props.put("mail.smtp.port", "587");
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.auth", "true");
 		
 		// session
 		Session mailSession = Session.getInstance(props, new MailAuthenticator());
